@@ -1,7 +1,9 @@
 .task_list {
     width: 700px;
     position: relative;
-    left: -800px;
+    left: -450px;
+}
+.task_list_active {
 }
 .tasks_primary {
     background-color: darkseagreen;
