@@ -9,6 +9,11 @@ body {
     position: relative;
     left: -450px;
 }
+.task_list li {
+    margin-bottom: 10px;
+    width: 200px;
+    background-color: darkgrey;
+}
 .task_list_active {
 }
 .tasks_primary {
