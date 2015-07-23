@@ -12,7 +12,10 @@ body {
 .task_list li {
     margin-bottom: 10px;
     width: 200px;
-    background-color: darkgrey;
+    background-color: lightgrey;
+}
+.task_list_hover {
+    background-color: lightgoldenrodyellow;
 }
 .task_list_active {
 }

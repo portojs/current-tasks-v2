@@ -11,7 +11,8 @@ function TaskListLogic() {
             $(this).animate({"left": "-450px"}, "fast");
         }
     };
-    $(".main_body").on("click.show_task_list", ".task_list", this.activateTaskList)
+    $(".main_body").on("click.show_task_list", ".task_list", this.activateTaskList);
+    $(".task_list").on("mouseover", "li", function() {$(this).toggleClass(".task_list_hover")});
 }
 
 $(document).ready(function(){
