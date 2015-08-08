@@ -14,7 +14,7 @@ body {
     width: 200px;
     background-color: lightgrey;
 }
-.task_list_hover {
+.task_list li:hover {
     background-color: lightgoldenrodyellow;
 }
 .task_list_active {
