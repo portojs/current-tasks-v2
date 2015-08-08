@@ -25,6 +25,9 @@ body {
 .tasks_secondary {
     background-color: rosybrown;
 }
+.add_task_form {
+    display: none;
+}
 .add_task_form_input {
     display: inline;
     width: 200px;
