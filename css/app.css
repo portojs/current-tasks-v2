@@ -9,13 +9,17 @@ body {
     position: relative;
     left: -450px;
 }
-.task_list li {
+.task_list span {
     margin-bottom: 10px;
-    width: 200px;
+    width: 300px;
     background-color: lightgrey;
 }
-.task_list li:hover {
+.task_list span:hover {
     background-color: lightgoldenrodyellow;
+}
+.task_list a {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .task_list_active {
 }
