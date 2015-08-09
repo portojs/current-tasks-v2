@@ -18,9 +18,18 @@ function TaskListLogic() {
     this.preventPropagation = function(event) {
         event.stopPropagation();
     };
+    this.addTask = function(event) {
+        event.stopPropagation();
+        var newTaskText = $(this).closest(".add_task_form").find(".add_task_form_input").val();
+        if (newTaskText.length > 0) {
+            var newTask = $(this).closest(".task_list").find("li:first-child").clone().text(newTaskText);
+            $(this).closest(".task_list").find(".list-unstyled").append(newTask);
+        }
+    };
     $(".main_body").on("click.show_task_list", ".task_list", this.activateTaskList);
-    $(".tasks_container").on("click.show_add_task_form", ".button_new_task", this.openAddTaskForm);
-    $(".add_task_form").on("click.show_add_task_form", ".add_task_form_input", this.preventPropagation);
+    $(".tasks_container").on("click.add_task_form", ".button_new_task", this.openAddTaskForm);
+    $(".add_task_form").on("click.add_task_form", ".add_task_form_input", this.preventPropagation);
+    $(".add_task_form").on("click.add_task_form", ".button_add_task", this.addTask)
 }
 
 $(document).ready(function(){
