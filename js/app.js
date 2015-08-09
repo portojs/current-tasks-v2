@@ -12,7 +12,7 @@ function TaskListLogic() {
         }
     };
     this.openAddTaskForm = function(event) {
-        event.preventDefault();
+        event.stopPropagation();
         $(this).closest(".task_list").find(".add_task_form").slideToggle();
     };
     $(".main_body").on("click.show_task_list", ".task_list", this.activateTaskList);
