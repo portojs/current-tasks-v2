@@ -9,19 +9,27 @@ body {
     position: relative;
     left: -450px;
 }
-.task_list span {
+.task_list span:first-child {
     margin-bottom: 10px;
-    width: 300px;
+    margin-right: 10px;
     background-color: lightgrey;
+    border: none;
+    border-radius: 0;
 }
-.task_list span:hover {
+.task_list span:first-child:hover {
     background-color: lightgoldenrodyellow;
 }
-.task_list a {
-    margin-left: 10px;
-    margin-right: 10px;
+.task_list span {
+    margin-right: 3px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20%;
+    color: black;
+    text-decoration: none;
 }
-.task_list_active {
+.task_list span:hover {
+    background-color: antiquewhite;
+    text-decoration: none;
 }
 .tasks_primary {
     background-color: darkseagreen;
@@ -34,5 +42,9 @@ body {
 }
 .add_task_form_input {
     display: inline;
+    width: 200px;
+}
+.test {
+    background-color: #1b6d85;
     width: 200px;
 }
